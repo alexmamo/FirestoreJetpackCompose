@@ -39,9 +39,11 @@ class ProductsActivity : AppCompatActivity() {
         products?.let {
             LazyColumn {
                 items(
-                        items = products
-                ) { product ->
-                    ProductCard(product = product)
+                        count = products.size
+                ) {
+                    for (product in products) {
+                        ProductCard(product = product)
+                    }
                 }
             }
         }
