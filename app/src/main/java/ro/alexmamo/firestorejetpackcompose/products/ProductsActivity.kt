@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.setContent
+import androidx.compose.foundation.lazy.items
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import ro.alexmamo.firestorejetpackcompose.composables.CircularProgressBar
@@ -39,11 +40,9 @@ class ProductsActivity : AppCompatActivity() {
         products?.let {
             LazyColumn {
                 items(
-                        count = products.size
-                ) {
-                    for (product in products) {
-                        ProductCard(product = product)
-                    }
+                        items = products
+                ) { product ->
+                    ProductCard(product = product)
                 }
             }
         }
