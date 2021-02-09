@@ -12,4 +12,4 @@ To make this app work, follow the instructions given in the official documentati
 
 This repo is the source code of the this article: [How to display data from Firestore using Jetpack Compose?](https://medium.com/firebase-developers/how-to-display-data-from-firestore-using-jetpack-compose-49ee736dc07d)
 
-See it also on youtube: coming soon...
+See it also on youtube: https://www.youtube.com/watch?v=QaJFqRCoK1o&ab_channel=AlexMamo
